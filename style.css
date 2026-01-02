@@ -285,7 +285,7 @@
   }
 
   .card__title {
-    font-size: var(--card-title-font-size, var(--font-size-heading-regular));
+    font-size: var(--card-title-font-size, var(--font-size-heading-sm));
     color: var(--card-title-color, var(--text-brand));
   }
 
@@ -305,6 +305,30 @@
   .button:focus-visible {
     color: var(--text-high-contrast);
     background-color: var(--background-accent-light);
+  }
+
+  .site-footer {
+    background-color: var(--background-dark);
+    text-align: center;
+    /* only top and bottom padding */
+    padding-block: 2rem;
+    display: grid;
+    gap: 2rem;
+  }
+
+  .site-footer__title {
+    font-size: var(--font-size-lg);
+    font-family: var(--ff-heading);
+    font-weight: 700;
+
+    a {
+      color: var(--text-main);
+    }
+
+    a:hover,
+    a:focus-visible {
+      color: var(--text-brand-light);
+    }
   }
 }
 
