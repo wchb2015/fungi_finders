@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .example {
+        border: 3px solid red;
+        padding: 5px;
+        margin: 25px;
+        background-color: white;
+      }
+      .box-1 {
+        border: 1px solid black;
+        color: white;
+        background-color: blue;
+        flex-grow: 1;
+        /* height: 300px;
+        width: 300px; */
+      }
+      .box-2 {
+        border: 1px solid black;
+        color: white;
+        background-color: red;
+        flex-grow: 1;
+        /* height: 100px;
+        width: 300px; */
+      }
+      .box-3 {
+        border: 1px solid black;
+        color: white;
+        background-color: green;
+        flex-grow: 1;
+        /* height: 200px;
+        width: 300px; */
+      }
+      .right-column {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+      .floated div {
+        float: left;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="example">haha hehe</section>
+    <div class="container">
+      <div class="box-1">1</div>
+      <div class="right-column">
+        <div class="box-2">2</div>
+        <div class="box-3">3</div>
+      </div>
+    </div>
+  </body>
+</html>
